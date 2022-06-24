@@ -33,7 +33,7 @@ def func():
     b=[i for i in range(1000000)]
     a.append(b)
     b.append(a) //相互引用，结束不会释放内存
-    showMemsize('创建李彪对象a,b之后')
+    showMemsize('创建列表对象a,b之后')
     print(sys.getrefcount(a)) # 3
     print(sys.getrefcount(b)) # 3
     # del a 
